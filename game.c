@@ -6,7 +6,7 @@
 /*   By: jissa <jissa@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 15:08:38 by jissa             #+#    #+#             */
-/*   Updated: 2025/07/10 14:37:24 by jissa            ###   ########.fr       */
+/*   Updated: 2025/07/10 16:25:34 by jissa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,7 @@ void	game_main(char **map)
 	game->win_width = custom_strlen(map[0]) * game->tile_size;
 	game->win_height = map_height * game->tile_size;
 	win = mlx_new_window \
-		(mlx, game->win_width, game->win_height, "my first window");
+(mlx, game->win_width, game->win_height, "my first window");
 	game->win = win;
 	load_images(game);
 	game_rendering(map, game);

@@ -6,14 +6,14 @@
 /*   By: jissa <jissa@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 14:52:58 by jissa             #+#    #+#             */
-/*   Updated: 2025/07/10 13:02:51 by jissa            ###   ########.fr       */
+/*   Updated: 2025/07/10 16:27:06 by jissa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
 int	is_rectangular(char **map)
-{	
+{
 	int	line_len;
 	int	i;
 
@@ -42,7 +42,7 @@ int	valid_map_characters(char **map)
 		while (j < line_len)
 		{
 			if (map[i][j] != '1' && map[i][j] != '0' \
-				&& map[i][j] != 'E' && map[i][j] != 'P' && map[i][j] != 'C')
+&& map[i][j] != 'E' && map[i][j] != 'P' && map[i][j] != 'C')
 				return (0);
 			j++;
 		}

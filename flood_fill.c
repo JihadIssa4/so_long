@@ -6,7 +6,7 @@
 /*   By: jissa <jissa@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/07 14:56:04 by jissa             #+#    #+#             */
-/*   Updated: 2025/07/10 01:02:36 by jissa            ###   ########.fr       */
+/*   Updated: 2025/07/10 16:24:33 by jissa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int	run_flood_fill(char **copied_map, int expected_collec)
 	find_player_pos(copied_map, &player_x, &player_y);
 	flood_fill(copied_map, player_x, player_y, data);
 	result = (expected_collec == data->collectibles_found && \
-				data->exit_reached == 1);
+data->exit_reached == 1);
 	free(data);
 	return (result);
 }

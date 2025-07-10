@@ -6,7 +6,7 @@
 /*   By: jissa <jissa@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 12:08:07 by jissa             #+#    #+#             */
-/*   Updated: 2025/05/27 16:50:16 by jissa            ###   ########.fr       */
+/*   Updated: 2025/07/10 16:20:15 by jissa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (n--)
 		{
 			dest_ptr[n] = src_ptr[n];
-		}	
+		}
 	}
 	return (dest);
 }

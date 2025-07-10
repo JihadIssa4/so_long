@@ -6,7 +6,7 @@
 /*   By: jissa <jissa@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 09:18:51 by jissa             #+#    #+#             */
-/*   Updated: 2025/07/10 13:03:14 by jissa            ###   ########.fr       */
+/*   Updated: 2025/07/10 16:28:59 by jissa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ int	whole_map_check(char **map)
 
 	line_height = getting_line_height_copied(map);
 	if (!valid_map_characters(map) \
-		|| !is_rectangular(map) \
-		|| !valid_walls(map, line_height) \
-		|| map_elements_check(map, 'P') != 1 \
-		|| map_elements_check(map, 'E') < 1 \
-		|| map_elements_check(map, 'C') < 1 \
-		|| !validate_path(map))
+|| !is_rectangular(map) \
+|| !valid_walls(map, line_height) \
+|| map_elements_check(map, 'P') != 1 \
+|| map_elements_check(map, 'E') < 1 \
+|| map_elements_check(map, 'C') < 1 \
+|| !validate_path(map))
 	{
 		ft_putstr("Error\nInvalid Map");
 		return (0);
